@@ -16,7 +16,7 @@
 ---
 
 ## 🧪 signal-ml-lab — 고전 DSP vs ML로 ECG 디노이징·진단
-[**github.com/YeonkyunLee/signal-ml-lab**](https://github.com/YeonkyunLee/signal-ml-lab)
+[**repo**](https://github.com/YeonkyunLee/signal-ml-lab) · [**📖 사이트/블로그**](https://yeonkyunlee.github.io/signal-ml-lab/)
 
 DSP 개발자가 ML로 넘어가며, 생체신호를 소재로 두 접근을 정면 비교한 엔드투엔드 실증.
 공개 데이터(PhysioNet)·합성만 사용.
@@ -29,7 +29,7 @@ DSP 개발자가 ML로 넘어가며, 생체신호를 소재로 두 접근을 정
 - 📓 7편 블로그 시리즈로 전 과정 기록
 
 ## 🤖 sensor-fusion-lab — 칼만부터 그래프 SLAM까지
-[**github.com/YeonkyunLee/sensor-fusion-lab**](https://github.com/YeonkyunLee/sensor-fusion-lab)
+[**repo**](https://github.com/YeonkyunLee/sensor-fusion-lab) · [**📖 사이트/블로그**](https://yeonkyunlee.github.io/sensor-fusion-lab/)
 
 DSP의 최적 필터를 상태공간으로 확장해 로봇 상태추정 전 과정을 밑바닥부터 구현.
 
