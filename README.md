@@ -33,12 +33,13 @@ DSP 개발자가 ML로 넘어가며, 생체신호를 소재로 두 접근을 정
 ## 🤖 sensor-fusion-lab — 칼만부터 그래프 SLAM까지
 [**repo**](https://github.com/YeonkyunLee/sensor-fusion-lab) · [**📖 사이트/블로그**](https://yeonkyunlee.github.io/sensor-fusion-lab/)
 
-DSP의 최적 필터를 상태공간으로 확장해 로봇 상태추정 전 과정을 밑바닥부터 구현.
+DSP의 최적 필터를 상태공간으로 확장해 로봇 상태추정 전 과정을 밑바닥부터 구현 (18실험).
 
-- 선형 KF · 위치+IMU 융합 · 비선형 **EKF/UKF**(CTRV) · **IMU 바이어스** 온라인 추정
-- **EKF-SLAM**(오도메트리 17×) → **루프 클로저** → **그래프 SLAM**(pose-graph, 5×)
-- **VIO**(IMU+모노큘러 방위 융합, 3×) — 채용 JD의 핵심 키워드
-- **불확실도-인지 안전 자율성** — 수술 로봇 No-Fly-Zone을 상태추정으로(침범률 60→0%)
+- 선형 KF · IMU 융합 · **EKF/UKF**(CTRV) · **IMU 바이어스** 추정 · **VIO**(3×)
+- **EKF-SLAM**(17×) → **그래프 SLAM**(pose-graph) → **3D SE(3)**(Lie 군) → **완전 BA**(pose+랜드마크)
+- **표준 g2o 벤치마크 검증**: Intel(2D) χ² 5.15M→216, parking-garage(3D) 16.7k→1.3
+- **강건 SLAM**(DCS로 거짓 루프클로저 거부) · **fixed-lag 온라인** · **완전 시스템 통합**(front+back-end)
+- **불확실도-인지 안전 자율성**(수술 No-Fly-Zone, 침범 60→0%) · **학습 IMU 프론트엔드**(ML+추정)
 - 📓 EKF-SLAM 디버깅 여정 + 의료 안전자율성 블로그 시리즈
 
 > 🎯 2026 로봇 시장이 원하는 것(상태추정·센서융합·VIO·엣지·안전한 자율성)과 정확히
